@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css" media="all">
+    <title>Tic-Tac-Toe</title>
+    
+</head>
+<body>
+    <main>
+    <h1>✦ TIC-TAC-TOE ARENA ✦</h1> <br> <br>
+    <!-- <button id="start">START</button> <br><br> -->
+
+    <div class="room-container">
+        <input type="text" id="room-input" placeholder="Enter Room Code" />
+        <button id="join-room">Join Room</button>
+      </div>
+      
+
+    <div class="message-container">
+        <p id="message"> </p>
+    </div>    
+    <button id="newgame-button">New Game</button>
+
+    <div class="waiting-container hide">
+        <p id="waiting-msg">Waiting for second player to join...</p>
+      </div>
+      
+    <div class="game-container hide">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>   
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>  
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>        
+    </div> <br><br>
+    <p id="first" class="hide"></p>
+</main>   
+
+<!-- <div class="pixel-ground">
+        <div class="pixel-character run-animation"></div>
+    </div> -->
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
